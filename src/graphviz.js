@@ -33,14 +33,14 @@ async function go() {
     const viz = new Viz();
     const element = await viz.renderImageElement(script.innerHTML);
 
-    // element.style.width = 'auto';
-    // element.style.height = 'auto';
-    // element.style.maxWidth = '100%';
-    // element.style.maxHeight = '100%';
-    // element.style.display = 'block';
-    // element.style.margin = 'auto';
-    element.width = '100%';
-    element.height = '100%';
+    element.style.width = 'auto';
+    element.style.height = 'auto';
+    element.style.maxWidth = '100%';
+    element.style.maxHeight = '100%';
+    element.style.display = 'block';
+    element.style.margin = 'auto';
+    element.width = 'auto';
+    element.height = 'auto';
 
     console.log(element);
 
