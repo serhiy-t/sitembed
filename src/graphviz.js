@@ -25,8 +25,11 @@ async function go() {
   await loadScript(baseUrl + 'deps/viz/full.render.js');
 
   const scripts = document.querySelectorAll(`script[type='text/sitembed-graphviz']`);
+  console.log(`Scripts found`, scripts);
 
   scripts.forEach(async (script) => {
+    console.log(`Script source: `, script.innerHTML);
+
     const viz = new Viz();
     const element = await viz.renderImageElement(script.innerHTML);
 
